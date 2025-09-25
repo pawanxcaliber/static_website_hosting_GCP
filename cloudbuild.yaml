@@ -1,3 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['storage', 'rsync', '-r', '.', 'gs://nth-weft-472916-static-website']
+
+options:
+  logsBucket: 'gs://nth-weft-472916-static-website'
