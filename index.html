@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First DevSecOps Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevSecOps Project - Welcome!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset & Font Import */
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f7f6; /* Light gray background */
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Container for content */
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: #ffffff; /* White content background */
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* Header styling */
+    h1 {
+      color: #2c3e50; /* Dark blue/gray */
+      font-size: 2.8em;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -10px;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background-color: #3498db; /* Blue accent */
+      border-radius: 2px;
+    }
+
+    /* Paragraph styling */
+    p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    /* Button/Action link styling */
+    .button {
+      display: inline-block;
+      background-color: #3498db; /* Blue accent */
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2980b9; /* Darker blue on hover */
+    }
+
+    /* Footer styling */
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    .footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This static website was successfully deployed with Terraform!</p>
+  <div class="container">
+    <h1>Welcome to My DevSecOps Journey!</h1>
+    <p>
+      This static website showcases a successful deployment using Google Cloud's Infrastructure as Code (Terraform)
+      and an automated CI/CD pipeline (Cloud Build).
+    </p>
+    <p>
+      It demonstrates foundational skills for aspiring DevOps and Cloud Engineers.
+    </p>
+    <a href="https://github.com/pawanxcaliber/static_website_hosting_GCP" target="_blank" class="button">View Project on GitHub</a>
+    <div class="footer">
+      <p>&copy; 2024 Pawan M Kolachippu. All rights reserved.</p>
+      <p>Powered by Google Cloud</p>
+    </div>
+  </div>
 </body>
 </html>
