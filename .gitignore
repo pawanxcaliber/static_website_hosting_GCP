@@ -1,0 +1,9 @@
+# Ignore Terraform-specific files
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+
+# Ignore Google Cloud SDK files
+google-cloud-cli-linux-x86_64.tar.gz
+google-cloud-sdk/
