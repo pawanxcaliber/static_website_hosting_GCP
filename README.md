@@ -2,7 +2,7 @@
 
 This project is a practical demonstration of core DevSecOps principles, showcasing a fully automated pipeline for deploying a static website to Google Cloud Platform (GCP). It illustrates the integration of development, security, and operations practices to build a robust and efficient workflow.
 
-## The Theory Behind the Implementation 🧠
+## The Theory Behind the Implementation 
 
 ### 1. Infrastructure as Code (IaC)
 
@@ -25,7 +25,7 @@ Security is built into this pipeline, not added as an afterthought.
 * **Principle of Least Privilege**: The Cloud Build trigger does not use a powerful default service account. Instead, a dedicated service account (`cloud-build-deployer`) is created with only the **`Storage Object Admin`** role. This ensures the account can only perform the necessary action—uploading files to the bucket—and nothing else.
 * **Auditability & Transparency**: Every build, successful or failed, generates detailed logs in Cloud Build History. This provides a clear audit trail of who, what, and when changes were made, which is crucial for incident response and compliance.
 
-## Technical Implementation 🛠️
+## Technical Implementation 
 
 ### Repository Contents
 
